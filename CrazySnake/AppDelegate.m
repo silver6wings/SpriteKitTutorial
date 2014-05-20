@@ -14,6 +14,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSNumber * num = [[NSUserDefaults standardUserDefaults] objectForKey:@"CS_Test"];
+    NSLog(@"%@", num);
+    
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"CS_Test"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     [[UIApplication sharedApplication] setStatusBarHidden:YES]; // 旧版ios隐藏状态栏
     
     UIViewController * rvc = [[RootViewController alloc] init];

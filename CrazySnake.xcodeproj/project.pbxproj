@@ -15,11 +15,12 @@
 		1968B85D18F78678000D689B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968B85C18F78678000D689B /* main.m */; };
 		1968B86118F78678000D689B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968B86018F78678000D689B /* AppDelegate.m */; };
 		1968B86E18F78679000D689B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1968B86D18F78679000D689B /* Images.xcassets */; };
+		198D99E5192AF16E000E9FD2 /* CSBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 198D99E4192AF16E000E9FD2 /* CSBody.m */; };
 		198EBC121908067B0046E54D /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 198EBC0D1908067B0046E54D /* GameOverScene.m */; };
 		198EBC131908067B0046E54D /* PlaneScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 198EBC0F1908067B0046E54D /* PlaneScene.m */; };
 		198EBC141908067B0046E54D /* PlaneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198EBC111908067B0046E54D /* PlaneViewController.m */; };
 		198EBC19190806820046E54D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198EBC16190806820046E54D /* RootViewController.m */; };
-		198EBC1A190806820046E54D /* SnakeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 198EBC18190806820046E54D /* SnakeScene.m */; };
+		198EBC1A190806820046E54D /* CSPlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 198EBC18190806820046E54D /* CSPlayScene.m */; };
 		198EBC20190807440046E54D /* battery.png in Resources */ = {isa = PBXBuildFile; fileRef = 198EBC1D190807440046E54D /* battery.png */; };
 		198EBC21190807440046E54D /* bomb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 198EBC1E190807440046E54D /* bomb.jpg */; };
 		198EBC22190807440046E54D /* plane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 198EBC1F190807440046E54D /* plane.jpg */; };
@@ -39,6 +40,8 @@
 		1968B86018F78678000D689B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1968B86D18F78679000D689B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1968B87418F78679000D689B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		198D99E3192AF16E000E9FD2 /* CSBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSBody.h; path = Snake/CSBody.h; sourceTree = "<group>"; };
+		198D99E4192AF16E000E9FD2 /* CSBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSBody.m; path = Snake/CSBody.m; sourceTree = "<group>"; };
 		198EBC0C1908067B0046E54D /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = CrazySnake/Plane/GameOverScene.h; sourceTree = "<group>"; };
 		198EBC0D1908067B0046E54D /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOverScene.m; path = CrazySnake/Plane/GameOverScene.m; sourceTree = "<group>"; };
 		198EBC0E1908067B0046E54D /* PlaneScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaneScene.h; path = CrazySnake/Plane/PlaneScene.h; sourceTree = "<group>"; };
@@ -47,8 +50,8 @@
 		198EBC111908067B0046E54D /* PlaneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaneViewController.m; path = CrazySnake/Plane/PlaneViewController.m; sourceTree = "<group>"; };
 		198EBC15190806820046E54D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Snake/RootViewController.h; sourceTree = "<group>"; };
 		198EBC16190806820046E54D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Snake/RootViewController.m; sourceTree = "<group>"; };
-		198EBC17190806820046E54D /* SnakeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnakeScene.h; path = Snake/SnakeScene.h; sourceTree = "<group>"; };
-		198EBC18190806820046E54D /* SnakeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnakeScene.m; path = Snake/SnakeScene.m; sourceTree = "<group>"; };
+		198EBC17190806820046E54D /* CSPlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSPlayScene.h; path = Snake/CSPlayScene.h; sourceTree = "<group>"; };
+		198EBC18190806820046E54D /* CSPlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSPlayScene.m; path = Snake/CSPlayScene.m; sourceTree = "<group>"; };
 		198EBC1D190807440046E54D /* battery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battery.png; path = Resource/Plane/battery.png; sourceTree = SOURCE_ROOT; };
 		198EBC1E190807440046E54D /* bomb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bomb.jpg; path = Resource/Plane/bomb.jpg; sourceTree = SOURCE_ROOT; };
 		198EBC1F190807440046E54D /* plane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = plane.jpg; path = Resource/Plane/plane.jpg; sourceTree = SOURCE_ROOT; };
@@ -128,8 +131,10 @@
 			children = (
 				198EBC15190806820046E54D /* RootViewController.h */,
 				198EBC16190806820046E54D /* RootViewController.m */,
-				198EBC17190806820046E54D /* SnakeScene.h */,
-				198EBC18190806820046E54D /* SnakeScene.m */,
+				198EBC17190806820046E54D /* CSPlayScene.h */,
+				198EBC18190806820046E54D /* CSPlayScene.m */,
+				198D99E3192AF16E000E9FD2 /* CSBody.h */,
+				198D99E4192AF16E000E9FD2 /* CSBody.m */,
 			);
 			name = Snake;
 			sourceTree = "<group>";
@@ -234,13 +239,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198EBC1A190806820046E54D /* SnakeScene.m in Sources */,
+				198EBC1A190806820046E54D /* CSPlayScene.m in Sources */,
 				1968B86118F78678000D689B /* AppDelegate.m in Sources */,
 				198EBC131908067B0046E54D /* PlaneScene.m in Sources */,
 				198EBC19190806820046E54D /* RootViewController.m in Sources */,
 				198EBC121908067B0046E54D /* GameOverScene.m in Sources */,
 				1968B85D18F78678000D689B /* main.m in Sources */,
 				198EBC141908067B0046E54D /* PlaneViewController.m in Sources */,
+				198D99E5192AF16E000E9FD2 /* CSBody.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

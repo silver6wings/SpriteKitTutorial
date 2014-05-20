@@ -6,7 +6,8 @@
 //  Copyright (c) 2014年 silver6wings. All rights reserved.
 //
 
-#import "SnakeScene.h"
+#import "CSPlayScene.h"
+#import "CSBody.h"
 
 #define CS_BOTTOM 5
 #define CS_LEFT 5
@@ -17,12 +18,16 @@
 #define CS_MAX_X (CS_WIDTH/CS_SIZE)
 #define CS_MAX_Y (CS_HEIGHT/CS_SIZE)
 
+#define CS_SAMPLING_RATE 200            // 采样率
+#define CS_SAMPLING_LINEAR_LIMIT 5.0f   // 直线灵敏度
+#define CS_SAMPLING_ANGLE_LIMIT 20.f    // 角度灵敏度
+
 static const int CSDx[4] = {0, 1, 0, -1};
 static const int CSDy[4] = {-1, 0, 1, 0};
 
 static inline CGPoint xy2point(int i, int j)
 {
-    return CGPointMake(CS_LEFT + j * CS_SIZE, CS_HEIGHT - ( CS_BOTTOM + i*CS_SIZE ));
+    return CGPointMake(CS_LEFT + (j-1) * CS_SIZE, CS_HEIGHT - ( CS_BOTTOM + (i-1) * CS_SIZE ));
 }
 
 typedef enum : NSUInteger {
@@ -35,32 +40,44 @@ typedef enum : NSUInteger {
 
 typedef enum : NSUInteger {
     CSContentSpace = 0,
-    CSContentApple = -1
+    CSContentWalls = -1,
+    CSContentApple = -2
 } CSContent;
 
-@interface SnakeScene()
+@interface CSPlayScene()
+
+@property (nonatomic, assign) float interval;
+@property (nonatomic, assign) int samplingCount;
+
+/*
 @property (nonatomic, assign) int snakeHeadX;
 @property (nonatomic, assign) int snakeHeadY;
 @property (nonatomic, assign) int snakeTailX;
 @property (nonatomic, assign) int snakeTailY;
+*/
+
 @property (nonatomic, assign) int snakeLength;
-@property (nonatomic) CSDirection snakeDirection;
+@property (nonatomic) CSBody * snakeHead;
+@property (nonatomic) CSBody * snakeTail;
+
+@property (nonatomic) CSDirection snakeCurrentDirection;
+@property (nonatomic) CSDirection snakeTowardsDirection;
 
 @property (nonatomic, assign) BOOL moving;
-@property (nonatomic, assign) float interval;
 @property (nonatomic, assign) float prevMouseX;
 @property (nonatomic, assign) float prevMouseY;
 @property (nonatomic) NSTimeInterval prevTime;
 @property (nonatomic) SKLabelNode * myLabel;
 @end
 
-@implementation SnakeScene
+@implementation CSPlayScene
 {
-    int map[CS_MAX_Y][CS_MAX_X];
-    SKSpriteNode * graph[CS_MAX_Y][CS_MAX_X];
+    int map[CS_MAX_Y + 2][CS_MAX_X + 2];
+    SKSpriteNode * graph[CS_MAX_Y + 1][CS_MAX_X + 1];
 }
 
--(id)initWithSize:(CGSize)size {
+-(id)initWithSize:(CGSize)size
+{
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
@@ -74,10 +91,17 @@ typedef enum : NSUInteger {
                                        CGRectGetMidY(self.frame));
         [self addChild:_myLabel];
         
+        // 初始化参数
+        _interval = 0.07f;
+        _samplingCount = CS_SAMPLING_RATE;
         
         // 初始化地图
-        for (int i = 0; i < CS_MAX_Y; i++) {
-            for (int j = 0; j < CS_MAX_X; j++) {
+        for (int i = 0; i <= CS_MAX_Y + 1; i++)
+            for (int j = 0; j <= CS_MAX_X + 1; j++)
+                map[i][j] = CSContentWalls;
+        
+        for (int i = 1; i <= CS_MAX_Y; i++) {
+            for (int j = 1; j <= CS_MAX_X; j++) {
                 map[i][j] = CSContentSpace;
                 graph[i][j] = [SKSpriteNode spriteNodeWithColor:[UIColor clearColor] size:CGSizeMake(CS_SIZE-2, CS_SIZE-2)];
                 graph[i][j].position = xy2point(i, j);
@@ -86,20 +110,23 @@ typedef enum : NSUInteger {
         }
         
         // 初始化蛇
-        _interval = 0.05f;
         _moving = NO; // 是否移动
-        _snakeDirection = CSDirectionDown; // 开始向右
-        _snakeLength = 6;
+        _snakeCurrentDirection = CSDirectionRight; // 开始向右
+        _snakeTowardsDirection = CSDirectionRight; // 开始向右
         
-        for (int i = 0; i < _snakeLength; i++) {
-            map[0][i] = _snakeLength - i;
+        // 创建蛇
+        _snakeLength = 2;
+        _snakeHead = [CSBody bodyWithNum:1 X:2 Y:1];
+        _snakeTail = [CSBody bodyWithNum:2 X:1 Y:1];
+        _snakeHead.next = _snakeTail;
+        
+        CSBody * tBody = _snakeHead;
+        while (tBody != nil) {
+            map[tBody.y][tBody.x] = tBody.num;
+            tBody = tBody.next;
         }
         
-        _snakeHeadX = _snakeLength - 1;
-        _snakeHeadY = 0;
-        _snakeTailX = 0;
-        _snakeTailY = 0;
-        
+        [self outputMap];
         [self refreshScreen];
     }
     return self;
@@ -116,27 +143,36 @@ typedef enum : NSUInteger {
 {
     if (touches.count > 1) return;
     
+    // 判断采样度
+    _samplingCount = (_samplingCount++) % CS_SAMPLING_RATE;
+    if (_samplingCount != 0) return;
+    
     // 获取鼠标坐标
     UITouch * touch = [touches anyObject];
     CGPoint location = [touch locationInNode:self];
-    NSLog(@"x:%f y:%f", location.x, location.y);
+    
+    float dx = fabsf(location.x - _prevMouseX);
+    float dy = fabsf(location.y - _prevMouseY);
+    //NSLog(@"x:%f y:%f", location.x - _prevMouseX, location.y - _prevMouseY);
     
     // 判断鼠标动作
-    if (fabsf(location.x - _prevMouseX) > fabsf(location.y - _prevMouseY)) {
-        if (location.x > _prevMouseX) {
-            _myLabel.text = @"right";
-            if(_snakeDirection != CSDirectionLeft) _snakeDirection = CSDirectionRight;
-        } else if (location.x < _prevMouseX){
-            _myLabel.text = @"left";
-            if(_snakeDirection != CSDirectionRight) _snakeDirection = CSDirectionLeft;
-        }
-    } else {
-        if (location.y > _prevMouseY) {
-            _myLabel.text = @"up";
-            if(_snakeDirection != CSDirectionDown) _snakeDirection = CSDirectionUp;
-        } else if (location.y < _prevMouseY){
-            _myLabel.text = @"down";
-            if(_snakeDirection != CSDirectionUp) _snakeDirection = CSDirectionDown;
+    if (fabs(dx-dy) > 2.0f) {
+        if (dx > dy || dx > CS_SAMPLING_LINEAR_LIMIT) {
+            if (location.x > _prevMouseX) {
+                _myLabel.text = @"right";
+                if(_snakeCurrentDirection != CSDirectionLeft) _snakeTowardsDirection = CSDirectionRight;
+            } else if (location.x < _prevMouseX){
+                _myLabel.text = @"left";
+                if(_snakeCurrentDirection != CSDirectionRight) _snakeTowardsDirection = CSDirectionLeft;
+            }
+        } else if (dy > dx || dy > CS_SAMPLING_LINEAR_LIMIT) {
+            if (location.y > _prevMouseY) {
+                _myLabel.text = @"up";
+                if(_snakeCurrentDirection != CSDirectionDown) _snakeTowardsDirection = CSDirectionUp;
+            } else if (location.y < _prevMouseY) {
+                _myLabel.text = @"down";
+                if(_snakeCurrentDirection != CSDirectionUp) _snakeTowardsDirection = CSDirectionDown;
+            }
         }
     }
     
@@ -161,15 +197,14 @@ typedef enum : NSUInteger {
         [self snakeGo];
         [self refreshScreen];
     }
-    
 }
 
 #pragma Custom
 
 -(void)refreshScreen
 {
-    for (int i = 0; i < CS_MAX_Y; i++) {
-        for (int j = 0; j < CS_MAX_X; j++) {
+    for (int i = 0; i <= CS_MAX_Y; i++) {
+        for (int j = 0; j <= CS_MAX_X; j++) {
             
             if (map[i][j] > 0) {
                 graph[i][j].color = [UIColor brownColor];
@@ -191,50 +226,38 @@ typedef enum : NSUInteger {
 
 -(void)snakeGo
 {
-    _snakeHeadX += CSDx[_snakeDirection];
-    _snakeHeadY += CSDy[_snakeDirection];
+    int nextX = _snakeHead.x + CSDx[_snakeTowardsDirection];
+    int nextY = _snakeHead.y + CSDy[_snakeTowardsDirection];
     
-    if (_snakeHeadX >= CS_MAX_X || _snakeHeadX < 0 ||
-        _snakeHeadY >= CS_MAX_Y || _snakeHeadY < 0) {
-        NSLog(@"Dead to wall");
+    _snakeCurrentDirection = _snakeTowardsDirection;
+
+    if(map[nextY][nextX] > 0) {
+        NSLog(@"Crash self body");
         _moving = false;
         return;
     }
     
-    
-    if(map[_snakeHeadY][_snakeHeadX] > 0){
-        NSLog(@"Dead to self");
+    if (map[nextY][nextX] == CSContentWalls) {
+        NSLog(@"Crash the wall");
         _moving = false;
         return;
     }
     
-    for (int i = 0; i < CS_MAX_Y; i++) {
-        for (int j = 0; j < CS_MAX_X; j++) {
-            if (map[i][j] > 0) map[i][j]++;
-        }
+    if (map[nextY][nextX] == CSContentSpace) {
+        
     }
  
-    map[_snakeHeadY][_snakeHeadX] = 1;
-    map[_snakeTailY][_snakeTailX] = CSContentSpace;
-    
-    for (int i = 0; i < 4; i++) {
-        if(map[_snakeTailY+CSDy[i]][_snakeTailX+CSDx[i]] == _snakeLength){
-            _snakeTailX += CSDx[i];
-            _snakeTailY += CSDy[i];
-        }
-    }
 }
 
 -(void)outputMap
 {
     for (int i = 0; i < CS_MAX_Y; i++) {
         for (int j = 0; j < CS_MAX_X; j++) {
-            printf("%d", map[i][j]);
+            printf("%3d", map[i][j]);
         }
         printf("\n");
     }
     printf("-------------\n");
-
 }
 
 @end

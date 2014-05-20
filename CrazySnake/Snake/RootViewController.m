@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-#import "SnakeScene.h"
+#import "CSPlayScene.h"
 
 @implementation RootViewController
 
@@ -24,9 +24,8 @@
         mainView = [[SKView alloc] initWithFrame:CGRectMake(0, 44, 320, 480)]; // Retina 4
     }
     
-    
     if(!mainView.scene){
-        SKScene * scene = [SnakeScene sceneWithSize:mainView.bounds.size];
+        SKScene * scene = [CSPlayScene sceneWithSize:mainView.bounds.size];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         
         [mainView presentScene:scene];
