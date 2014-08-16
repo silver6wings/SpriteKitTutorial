@@ -35,10 +35,10 @@
         
         [skView presentScene:scene];
         
-        skView.showsFPS = YES;
-        skView.showsNodeCount = YES;
-        skView.showsDrawCount = YES;
-        skView.showsPhysics = YES;
+        skView.showsFPS = YES;          // 展示帧速率
+        skView.showsNodeCount = YES;    // 展示Node数量
+        skView.showsDrawCount = YES;    // 展示绘图操作的数量
+        skView.showsPhysics = NO;       // 展示物理模型
     }
 }
 

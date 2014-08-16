@@ -22,8 +22,8 @@
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES]; // 旧版ios隐藏状态栏
     
-    UIViewController * rvc = [[RootViewController alloc] init];
-    //UIViewController * rvc = [[PlaneViewController alloc] init];
+    //UIViewController * rvc = [[RootViewController alloc] init];
+    UIViewController * rvc = [[PlaneViewController alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = rvc;
