@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19853D5119A8E0E00027CD64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19853D5019A8E0E00027CD64 /* Foundation.framework */; };
+		19853D5319A8E0E00027CD64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19853D5219A8E0E00027CD64 /* CoreGraphics.framework */; };
+		19853D5519A8E0E00027CD64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19853D5419A8E0E00027CD64 /* UIKit.framework */; };
+		19853D5719A8E0E00027CD64 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19853D5619A8E0E00027CD64 /* SpriteKit.framework */; };
+		19853D5D19A8E0E00027CD64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19853D5B19A8E0E00027CD64 /* InfoPlist.strings */; };
+		19853D5F19A8E0E00027CD64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19853D5E19A8E0E00027CD64 /* main.m */; };
+		19853D6319A8E0E00027CD64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19853D6219A8E0E00027CD64 /* AppDelegate.m */; };
+		19853D6919A8E0E00027CD64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19853D6819A8E0E00027CD64 /* ViewController.m */; };
+		19853D6C19A8E0E00027CD64 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 19853D6B19A8E0E00027CD64 /* MyScene.m */; };
+		19853D6E19A8E0E00027CD64 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 19853D6D19A8E0E00027CD64 /* Spaceship.png */; };
+		19853D7019A8E0E00027CD64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19853D6F19A8E0E00027CD64 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19853D4D19A8E0E00027CD64 /* Sisyphus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sisyphus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19853D5019A8E0E00027CD64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19853D5219A8E0E00027CD64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19853D5419A8E0E00027CD64 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19853D5619A8E0E00027CD64 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		19853D5A19A8E0E00027CD64 /* Sisyphus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sisyphus-Info.plist"; sourceTree = "<group>"; };
+		19853D5C19A8E0E00027CD64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19853D5E19A8E0E00027CD64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19853D6019A8E0E00027CD64 /* Sisyphus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sisyphus-Prefix.pch"; sourceTree = "<group>"; };
+		19853D6119A8E0E00027CD64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19853D6219A8E0E00027CD64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19853D6719A8E0E00027CD64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		19853D6819A8E0E00027CD64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		19853D6A19A8E0E00027CD64 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		19853D6B19A8E0E00027CD64 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		19853D6D19A8E0E00027CD64 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		19853D6F19A8E0E00027CD64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		19853D7619A8E0E00027CD64 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19853D4A19A8E0E00027CD64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19853D5319A8E0E00027CD64 /* CoreGraphics.framework in Frameworks */,
+				19853D5519A8E0E00027CD64 /* UIKit.framework in Frameworks */,
+				19853D5719A8E0E00027CD64 /* SpriteKit.framework in Frameworks */,
+				19853D5119A8E0E00027CD64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19853D4419A8E0E00027CD64 = {
+			isa = PBXGroup;
+			children = (
+				19853D5819A8E0E00027CD64 /* Sisyphus */,
+				19853D4F19A8E0E00027CD64 /* Frameworks */,
+				19853D4E19A8E0E00027CD64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19853D4E19A8E0E00027CD64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19853D4D19A8E0E00027CD64 /* Sisyphus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19853D4F19A8E0E00027CD64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19853D5019A8E0E00027CD64 /* Foundation.framework */,
+				19853D5219A8E0E00027CD64 /* CoreGraphics.framework */,
+				19853D5419A8E0E00027CD64 /* UIKit.framework */,
+				19853D5619A8E0E00027CD64 /* SpriteKit.framework */,
+				19853D7619A8E0E00027CD64 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19853D5819A8E0E00027CD64 /* Sisyphus */ = {
+			isa = PBXGroup;
+			children = (
+				19853D6119A8E0E00027CD64 /* AppDelegate.h */,
+				19853D6219A8E0E00027CD64 /* AppDelegate.m */,
+				19853D6719A8E0E00027CD64 /* ViewController.h */,
+				19853D6819A8E0E00027CD64 /* ViewController.m */,
+				19853D6A19A8E0E00027CD64 /* MyScene.h */,
+				19853D6B19A8E0E00027CD64 /* MyScene.m */,
+				19853D6D19A8E0E00027CD64 /* Spaceship.png */,
+				19853D6F19A8E0E00027CD64 /* Images.xcassets */,
+				19853D5919A8E0E00027CD64 /* Supporting Files */,
+			);
+			path = Sisyphus;
+			sourceTree = "<group>";
+		};
+		19853D5919A8E0E00027CD64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19853D5A19A8E0E00027CD64 /* Sisyphus-Info.plist */,
+				19853D5B19A8E0E00027CD64 /* InfoPlist.strings */,
+				19853D5E19A8E0E00027CD64 /* main.m */,
+				19853D6019A8E0E00027CD64 /* Sisyphus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19853D4C19A8E0E00027CD64 /* Sisyphus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19853D8619A8E0E00027CD64 /* Build configuration list for PBXNativeTarget "Sisyphus" */;
+			buildPhases = (
+				19853D4919A8E0E00027CD64 /* Sources */,
+				19853D4A19A8E0E00027CD64 /* Frameworks */,
+				19853D4B19A8E0E00027CD64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sisyphus;
+			productName = Sisyphus;
+			productReference = 19853D4D19A8E0E00027CD64 /* Sisyphus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19853D4519A8E0E00027CD64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = silver6wings;
+			};
+			buildConfigurationList = 19853D4819A8E0E00027CD64 /* Build configuration list for PBXProject "Sisyphus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19853D4419A8E0E00027CD64;
+			productRefGroup = 19853D4E19A8E0E00027CD64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19853D4C19A8E0E00027CD64 /* Sisyphus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19853D4B19A8E0E00027CD64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19853D5D19A8E0E00027CD64 /* InfoPlist.strings in Resources */,
+				19853D7019A8E0E00027CD64 /* Images.xcassets in Resources */,
+				19853D6E19A8E0E00027CD64 /* Spaceship.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19853D4919A8E0E00027CD64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19853D6C19A8E0E00027CD64 /* MyScene.m in Sources */,
+				19853D6919A8E0E00027CD64 /* ViewController.m in Sources */,
+				19853D6319A8E0E00027CD64 /* AppDelegate.m in Sources */,
+				19853D5F19A8E0E00027CD64 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19853D5B19A8E0E00027CD64 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19853D5C19A8E0E00027CD64 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19853D8419A8E0E00027CD64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19853D8519A8E0E00027CD64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19853D8719A8E0E00027CD64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sisyphus/Sisyphus-Prefix.pch";
+				INFOPLIST_FILE = "Sisyphus/Sisyphus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		19853D8819A8E0E00027CD64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sisyphus/Sisyphus-Prefix.pch";
+				INFOPLIST_FILE = "Sisyphus/Sisyphus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19853D4819A8E0E00027CD64 /* Build configuration list for PBXProject "Sisyphus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19853D8419A8E0E00027CD64 /* Debug */,
+				19853D8519A8E0E00027CD64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19853D8619A8E0E00027CD64 /* Build configuration list for PBXNativeTarget "Sisyphus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19853D8719A8E0E00027CD64 /* Debug */,
+				19853D8819A8E0E00027CD64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19853D4519A8E0E00027CD64 /* Project object */;
+}

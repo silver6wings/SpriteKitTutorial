@@ -1,6 +1,6 @@
 //
 //  MyScene.h
-//  TestSpriteKit
+//  Sisyphus
 //
 
 //  Copyright (c) 2014年 silver6wings. All rights reserved.

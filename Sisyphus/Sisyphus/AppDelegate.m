@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  TestSpriteKit
+//  Sisyphus
 //
-//  Created by silver6wings on 14-8-19.
+//  Created by silver6wings on 14-8-23.
 //  Copyright (c) 2014年 silver6wings. All rights reserved.
 //
 
@@ -13,11 +13,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[ViewController alloc] init];
-    [self.window makeKeyAndVisible];
     
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

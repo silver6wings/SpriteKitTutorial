@@ -1,13 +1,14 @@
 //
-//  TestScene.h
-//  TestSpriteKit
+//  ViewController.h
+//  Sisyphus
 //
-//  Created by silver6wings on 14-8-19.
+
 //  Copyright (c) 2014年 silver6wings. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface TestScene : SKScene
+@interface ViewController : UIViewController
 
 @end
