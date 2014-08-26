@@ -9,15 +9,42 @@ SKEmitterNode * testEmitter;
 -(id)initWithSize:(CGSize)size{
     if (self = [super initWithSize:size]) {
         
-        /* 测试SpriteNode */
-        testNode = [[SKSpriteNode alloc] initWithImageNamed:@"Spaceship.png"];
+        
+        NSMutableArray *testFrames = [NSMutableArray array];
+        
+        SKTextureAtlas *testAtlas = [SKTextureAtlas atlasNamed:@"FireFrames"];
+        
+        for (int i=0; i < testAtlas.textureNames.count; i++) {
+            NSString *textureName = [NSString stringWithFormat:@"IMG%05d", i];
+            NSLog(@"%@",textureName);
+            SKTexture *temp = [testAtlas textureNamed:textureName];
+            [testFrames addObject:temp];
+        }
+        
+        SKTexture *temp = testFrames[0];
+        
+        SKSpriteNode * testSprite = [SKSpriteNode spriteNodeWithTexture:temp];
+        testSprite.size = CGSizeMake(300, 300);
+        testSprite.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+        [self addChild:testSprite];
+        
+        [testSprite runAction:[SKAction repeatActionForever:[SKAction animateWithTextures:testFrames timePerFrame:0.04]]];
+        
+        /*
+        SKTextureAtlas * testTextureAtlas = [SKTextureAtlas atlasNamed:@"fire.atlas"];
+        SKTexture * testTexture1 = [testTextureAtlas textureNamed:@"IMG00000"];
+        
+        // 测试SpriteNode
+        testNode = [[SKSpriteNode alloc] initWithTexture:testTexture1];
         testNode.size = CGSizeMake(100, 100);
         testNode.position = CGPointMake(100, 200);
-        testNode.name = @"spaceship";
-        testNode.color = [SKColor colorWithRed:0.5f green:0.5f blue:0.5 alpha:1.0f];
-        testNode.colorBlendFactor = 0.9f;
+        //testNode.name = @"spaceship";
+        //testNode.color = [SKColor redColor];//[SKColor colorWithRed:0.5f green:0.5f blue:0.5 alpha:1.0f];
+        //testNode.colorBlendFactor = 0.9f;
+        //testNode.blendMode = SKBlendModeAdd;
         [self addChild:testNode];
-
+        */
+         
         /* 文字Node
         SKLabelNode *testLabel = [SKLabelNode labelNodeWithFontNamed:@"Arial"];
         testLabel.text = @"Hello, World!";
@@ -56,6 +83,7 @@ SKEmitterNode * testEmitter;
     }
     return self;
 }
+
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     

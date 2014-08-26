@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D24DF0A1795E227002D3916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24DF091795E227002D3916 /* Foundation.framework */; };
+		9D24DF0C1795E227002D3916 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24DF0B1795E227002D3916 /* CoreGraphics.framework */; };
+		9D24DF0E1795E227002D3916 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24DF0D1795E227002D3916 /* UIKit.framework */; };
+		9D24DF101795E227002D3916 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24DF0F1795E227002D3916 /* SpriteKit.framework */; };
+		9D24DF161795E227002D3916 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D24DF141795E227002D3916 /* InfoPlist.strings */; };
+		9D24DF181795E227002D3916 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D24DF171795E227002D3916 /* main.m */; };
+		9D24DF1C1795E227002D3916 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D24DF1B1795E227002D3916 /* AppDelegate.m */; };
+		9D24DF1F1795E227002D3916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D24DF1D1795E227002D3916 /* Main.storyboard */; };
+		9D24DF221795E227002D3916 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D24DF211795E227002D3916 /* ViewController.m */; };
+		9D24DF251795E227002D3916 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D24DF241795E227002D3916 /* MyScene.m */; };
+		9D24DF271795E227002D3916 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D24DF261795E227002D3916 /* Spaceship.png */; };
+		9D24DF291795E227002D3916 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D24DF281795E227002D3916 /* Images.xcassets */; };
+		9D24DF301795E227002D3916 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24DF2F1795E227002D3916 /* XCTest.framework */; };
+		9D24DF311795E227002D3916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24DF091795E227002D3916 /* Foundation.framework */; };
+		9D24DF321795E227002D3916 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24DF0D1795E227002D3916 /* UIKit.framework */; };
+		9D24DF3A1795E227002D3916 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D24DF381795E227002D3916 /* InfoPlist.strings */; };
+		9D24DF3C1795E227002D3916 /* AnimatedBearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D24DF3B1795E227002D3916 /* AnimatedBearTests.m */; };
+		9DC9127017D127BC00CE56FD /* BearImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9126F17D127BC00CE56FD /* BearImages.atlas */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D24DF331795E227002D3916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D24DEFE1795E227002D3916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D24DF051795E227002D3916;
+			remoteInfo = AnimatedBear;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D24DF061795E227002D3916 /* AnimatedBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D24DF091795E227002D3916 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9D24DF0B1795E227002D3916 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9D24DF0D1795E227002D3916 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9D24DF0F1795E227002D3916 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		9D24DF131795E227002D3916 /* AnimatedBear-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimatedBear-Info.plist"; sourceTree = "<group>"; };
+		9D24DF151795E227002D3916 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D24DF171795E227002D3916 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D24DF191795E227002D3916 /* AnimatedBear-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimatedBear-Prefix.pch"; sourceTree = "<group>"; };
+		9D24DF1A1795E227002D3916 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9D24DF1B1795E227002D3916 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9D24DF1E1795E227002D3916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D24DF201795E227002D3916 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9D24DF211795E227002D3916 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9D24DF231795E227002D3916 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		9D24DF241795E227002D3916 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		9D24DF261795E227002D3916 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		9D24DF281795E227002D3916 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9D24DF2E1795E227002D3916 /* AnimatedBearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedBearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D24DF2F1795E227002D3916 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9D24DF371795E227002D3916 /* AnimatedBearTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimatedBearTests-Info.plist"; sourceTree = "<group>"; };
+		9D24DF391795E227002D3916 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D24DF3B1795E227002D3916 /* AnimatedBearTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedBearTests.m; sourceTree = "<group>"; };
+		9DC9126F17D127BC00CE56FD /* BearImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BearImages.atlas; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D24DF031795E227002D3916 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D24DF0C1795E227002D3916 /* CoreGraphics.framework in Frameworks */,
+				9D24DF0E1795E227002D3916 /* UIKit.framework in Frameworks */,
+				9D24DF101795E227002D3916 /* SpriteKit.framework in Frameworks */,
+				9D24DF0A1795E227002D3916 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D24DF2B1795E227002D3916 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D24DF301795E227002D3916 /* XCTest.framework in Frameworks */,
+				9D24DF321795E227002D3916 /* UIKit.framework in Frameworks */,
+				9D24DF311795E227002D3916 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D24DEFD1795E227002D3916 = {
+			isa = PBXGroup;
+			children = (
+				9D24DF111795E227002D3916 /* AnimatedBear */,
+				9D24DF351795E227002D3916 /* AnimatedBearTests */,
+				9D24DF081795E227002D3916 /* Frameworks */,
+				9D24DF071795E227002D3916 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D24DF071795E227002D3916 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D24DF061795E227002D3916 /* AnimatedBear.app */,
+				9D24DF2E1795E227002D3916 /* AnimatedBearTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D24DF081795E227002D3916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D24DF091795E227002D3916 /* Foundation.framework */,
+				9D24DF0B1795E227002D3916 /* CoreGraphics.framework */,
+				9D24DF0D1795E227002D3916 /* UIKit.framework */,
+				9D24DF0F1795E227002D3916 /* SpriteKit.framework */,
+				9D24DF2F1795E227002D3916 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D24DF111795E227002D3916 /* AnimatedBear */ = {
+			isa = PBXGroup;
+			children = (
+				9DC9126F17D127BC00CE56FD /* BearImages.atlas */,
+				9D24DF1A1795E227002D3916 /* AppDelegate.h */,
+				9D24DF1B1795E227002D3916 /* AppDelegate.m */,
+				9D24DF1D1795E227002D3916 /* Main.storyboard */,
+				9D24DF201795E227002D3916 /* ViewController.h */,
+				9D24DF211795E227002D3916 /* ViewController.m */,
+				9D24DF231795E227002D3916 /* MyScene.h */,
+				9D24DF241795E227002D3916 /* MyScene.m */,
+				9D24DF261795E227002D3916 /* Spaceship.png */,
+				9D24DF281795E227002D3916 /* Images.xcassets */,
+				9D24DF121795E227002D3916 /* Supporting Files */,
+			);
+			path = AnimatedBear;
+			sourceTree = "<group>";
+		};
+		9D24DF121795E227002D3916 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D24DF131795E227002D3916 /* AnimatedBear-Info.plist */,
+				9D24DF141795E227002D3916 /* InfoPlist.strings */,
+				9D24DF171795E227002D3916 /* main.m */,
+				9D24DF191795E227002D3916 /* AnimatedBear-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D24DF351795E227002D3916 /* AnimatedBearTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D24DF3B1795E227002D3916 /* AnimatedBearTests.m */,
+				9D24DF361795E227002D3916 /* Supporting Files */,
+			);
+			path = AnimatedBearTests;
+			sourceTree = "<group>";
+		};
+		9D24DF361795E227002D3916 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D24DF371795E227002D3916 /* AnimatedBearTests-Info.plist */,
+				9D24DF381795E227002D3916 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D24DF051795E227002D3916 /* AnimatedBear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D24DF3F1795E227002D3916 /* Build configuration list for PBXNativeTarget "AnimatedBear" */;
+			buildPhases = (
+				9D24DF021795E227002D3916 /* Sources */,
+				9D24DF031795E227002D3916 /* Frameworks */,
+				9D24DF041795E227002D3916 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimatedBear;
+			productName = AnimatedBear;
+			productReference = 9D24DF061795E227002D3916 /* AnimatedBear.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D24DF2D1795E227002D3916 /* AnimatedBearTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D24DF421795E227002D3916 /* Build configuration list for PBXNativeTarget "AnimatedBearTests" */;
+			buildPhases = (
+				9D24DF2A1795E227002D3916 /* Sources */,
+				9D24DF2B1795E227002D3916 /* Frameworks */,
+				9D24DF2C1795E227002D3916 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D24DF341795E227002D3916 /* PBXTargetDependency */,
+			);
+			name = AnimatedBearTests;
+			productName = AnimatedBearTests;
+			productReference = 9D24DF2E1795E227002D3916 /* AnimatedBearTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D24DEFE1795E227002D3916 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Tony Dahbura";
+				TargetAttributes = {
+					9D24DF051795E227002D3916 = {
+						DevelopmentTeam = BK7N2S57NR;
+					};
+					9D24DF2D1795E227002D3916 = {
+						TestTargetID = 9D24DF051795E227002D3916;
+					};
+				};
+			};
+			buildConfigurationList = 9D24DF011795E227002D3916 /* Build configuration list for PBXProject "AnimatedBear" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D24DEFD1795E227002D3916;
+			productRefGroup = 9D24DF071795E227002D3916 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D24DF051795E227002D3916 /* AnimatedBear */,
+				9D24DF2D1795E227002D3916 /* AnimatedBearTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D24DF041795E227002D3916 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D24DF161795E227002D3916 /* InfoPlist.strings in Resources */,
+				9D24DF291795E227002D3916 /* Images.xcassets in Resources */,
+				9D24DF271795E227002D3916 /* Spaceship.png in Resources */,
+				9D24DF1F1795E227002D3916 /* Main.storyboard in Resources */,
+				9DC9127017D127BC00CE56FD /* BearImages.atlas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D24DF2C1795E227002D3916 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D24DF3A1795E227002D3916 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D24DF021795E227002D3916 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D24DF251795E227002D3916 /* MyScene.m in Sources */,
+				9D24DF221795E227002D3916 /* ViewController.m in Sources */,
+				9D24DF1C1795E227002D3916 /* AppDelegate.m in Sources */,
+				9D24DF181795E227002D3916 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D24DF2A1795E227002D3916 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D24DF3C1795E227002D3916 /* AnimatedBearTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D24DF341795E227002D3916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D24DF051795E227002D3916 /* AnimatedBear */;
+			targetProxy = 9D24DF331795E227002D3916 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D24DF141795E227002D3916 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D24DF151795E227002D3916 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9D24DF1D1795E227002D3916 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D24DF1E1795E227002D3916 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D24DF381795E227002D3916 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D24DF391795E227002D3916 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D24DF3D1795E227002D3916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9D24DF3E1795E227002D3916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D24DF401795E227002D3916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tony Dahbura (4QHV725Z9P)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimatedBear/AnimatedBear-Prefix.pch";
+				INFOPLIST_FILE = "AnimatedBear/AnimatedBear-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9D24DF411795E227002D3916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tony Dahbura (4QHV725Z9P)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimatedBear/AnimatedBear-Prefix.pch";
+				INFOPLIST_FILE = "AnimatedBear/AnimatedBear-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9D24DF431795E227002D3916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AnimatedBear.app/AnimatedBear";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimatedBear/AnimatedBear-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AnimatedBearTests/AnimatedBearTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9D24DF441795E227002D3916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AnimatedBear.app/AnimatedBear";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimatedBear/AnimatedBear-Prefix.pch";
+				INFOPLIST_FILE = "AnimatedBearTests/AnimatedBearTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D24DF011795E227002D3916 /* Build configuration list for PBXProject "AnimatedBear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D24DF3D1795E227002D3916 /* Debug */,
+				9D24DF3E1795E227002D3916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D24DF3F1795E227002D3916 /* Build configuration list for PBXNativeTarget "AnimatedBear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D24DF401795E227002D3916 /* Debug */,
+				9D24DF411795E227002D3916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D24DF421795E227002D3916 /* Build configuration list for PBXNativeTarget "AnimatedBearTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D24DF431795E227002D3916 /* Debug */,
+				9D24DF441795E227002D3916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D24DEFE1795E227002D3916 /* Project object */;
+}
