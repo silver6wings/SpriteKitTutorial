@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192817C119AEF0C4008947DF /* testSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 192817C019AEF0C4008947DF /* testSound.wav */; };
 		19358BBF19AC95FF0090727A /* FireFrames.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 19358BBE19AC95FF0090727A /* FireFrames.atlas */; };
 		194549D519AC6C63006F3576 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 194549CE19AC6C63006F3576 /* Spaceship.png */; };
 		194549D619AC6C63006F3576 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 194549CF19AC6C63006F3576 /* spark.png */; };
@@ -15,9 +16,12 @@
 		194549D919AC6C63006F3576 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 194549D219AC6C63006F3576 /* testVideo.mp4 */; };
 		194549DA19AC6C63006F3576 /* TestFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 194549D319AC6C63006F3576 /* TestFire.sks */; };
 		194549DB19AC6C63006F3576 /* TestSpark.sks in Resources */ = {isa = PBXBuildFile; fileRef = 194549D419AC6C63006F3576 /* TestSpark.sks */; };
-		19454A5719AC73D5006F3576 /* fire.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 19454A5619AC73D5006F3576 /* fire.atlas */; };
 		19454A5B19AC785F006F3576 /* BearImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 19454A5A19AC785F006F3576 /* BearImages.atlas */; };
 		19705A6519A3888900BA3032 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 19705A6419A3888900BA3032 /* TestScene.m */; };
+		19A0E3C219AD8E0E002DCC90 /* TextureNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19A0E3C119AD8E0E002DCC90 /* TextureNames.plist */; };
+		19A0E3C419ADC1E0002DCC90 /* Missile.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0E3C319ADC1E0002DCC90 /* Missile.png */; };
+		19A0E3C819ADC7FF002DCC90 /* testButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0E3C719ADC7FF002DCC90 /* testButton.png */; };
+		19AD772E19B749F900CE7CA6 /* CameraScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD772D19B749F900CE7CA6 /* CameraScene.m */; };
 		19D6312B19A382240068F1CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D6312A19A382240068F1CC /* Foundation.framework */; };
 		19D6312D19A382240068F1CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D6312C19A382240068F1CC /* CoreGraphics.framework */; };
 		19D6312F19A382240068F1CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D6312E19A382240068F1CC /* UIKit.framework */; };
@@ -30,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		192817C019AEF0C4008947DF /* testSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = testSound.wav; sourceTree = "<group>"; };
 		19358BBE19AC95FF0090727A /* FireFrames.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = FireFrames.atlas; path = Resource/FireFrames.atlas; sourceTree = "<group>"; };
 		194549CE19AC6C63006F3576 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Spaceship.png; path = Resource/Spaceship.png; sourceTree = "<group>"; };
 		194549CF19AC6C63006F3576 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = Resource/spark.png; sourceTree = "<group>"; };
@@ -38,10 +43,14 @@
 		194549D219AC6C63006F3576 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = testVideo.mp4; path = Resource/testVideo.mp4; sourceTree = "<group>"; };
 		194549D319AC6C63006F3576 /* TestFire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = TestFire.sks; path = Resource/TestFire.sks; sourceTree = "<group>"; };
 		194549D419AC6C63006F3576 /* TestSpark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = TestSpark.sks; path = Resource/TestSpark.sks; sourceTree = "<group>"; };
-		19454A5619AC73D5006F3576 /* fire.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = fire.atlas; path = Resource/fire.atlas; sourceTree = "<group>"; };
 		19454A5A19AC785F006F3576 /* BearImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = BearImages.atlas; path = Resource/BearImages.atlas; sourceTree = "<group>"; };
 		19705A6319A3888900BA3032 /* TestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
 		19705A6419A3888900BA3032 /* TestScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestScene.m; sourceTree = "<group>"; };
+		19A0E3C119AD8E0E002DCC90 /* TextureNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TextureNames.plist; sourceTree = "<group>"; };
+		19A0E3C319ADC1E0002DCC90 /* Missile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Missile.png; path = Resource/Missile.png; sourceTree = "<group>"; };
+		19A0E3C719ADC7FF002DCC90 /* testButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testButton.png; sourceTree = "<group>"; };
+		19AD772C19B749F900CE7CA6 /* CameraScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraScene.h; sourceTree = "<group>"; };
+		19AD772D19B749F900CE7CA6 /* CameraScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraScene.m; sourceTree = "<group>"; };
 		19D6312719A382240068F1CC /* TestSpriteKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSpriteKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D6312A19A382240068F1CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19D6312C19A382240068F1CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,14 +88,17 @@
 			children = (
 				19358BBE19AC95FF0090727A /* FireFrames.atlas */,
 				19454A5A19AC785F006F3576 /* BearImages.atlas */,
-				19454A5619AC73D5006F3576 /* fire.atlas */,
 				194549CE19AC6C63006F3576 /* Spaceship.png */,
+				19A0E3C319ADC1E0002DCC90 /* Missile.png */,
+				19A0E3C719ADC7FF002DCC90 /* testButton.png */,
 				194549D019AC6C63006F3576 /* testCrop.jpg */,
 				194549D119AC6C63006F3576 /* testMask.png */,
+				192817C019AEF0C4008947DF /* testSound.wav */,
 				194549D219AC6C63006F3576 /* testVideo.mp4 */,
 				194549CF19AC6C63006F3576 /* spark.png */,
 				194549D319AC6C63006F3576 /* TestFire.sks */,
 				194549D419AC6C63006F3576 /* TestSpark.sks */,
+				19A0E3C119AD8E0E002DCC90 /* TextureNames.plist */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -128,6 +140,8 @@
 				19D6313C19A382240068F1CC /* AppDelegate.m */,
 				19D6314119A382240068F1CC /* ViewController.h */,
 				19D6314219A382240068F1CC /* ViewController.m */,
+				19AD772C19B749F900CE7CA6 /* CameraScene.h */,
+				19AD772D19B749F900CE7CA6 /* CameraScene.m */,
 				19705A6319A3888900BA3032 /* TestScene.h */,
 				19705A6419A3888900BA3032 /* TestScene.m */,
 				19D6314919A382240068F1CC /* Images.xcassets */,
@@ -205,10 +219,13 @@
 				19358BBF19AC95FF0090727A /* FireFrames.atlas in Resources */,
 				194549D619AC6C63006F3576 /* spark.png in Resources */,
 				19454A5B19AC785F006F3576 /* BearImages.atlas in Resources */,
+				19A0E3C219AD8E0E002DCC90 /* TextureNames.plist in Resources */,
 				194549D519AC6C63006F3576 /* Spaceship.png in Resources */,
+				192817C119AEF0C4008947DF /* testSound.wav in Resources */,
 				194549D919AC6C63006F3576 /* testVideo.mp4 in Resources */,
+				19A0E3C419ADC1E0002DCC90 /* Missile.png in Resources */,
 				19D6314A19A382240068F1CC /* Images.xcassets in Resources */,
-				19454A5719AC73D5006F3576 /* fire.atlas in Resources */,
+				19A0E3C819ADC7FF002DCC90 /* testButton.png in Resources */,
 				194549D719AC6C63006F3576 /* testCrop.jpg in Resources */,
 				194549D819AC6C63006F3576 /* testMask.png in Resources */,
 			);
@@ -221,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19AD772E19B749F900CE7CA6 /* CameraScene.m in Sources */,
 				19705A6519A3888900BA3032 /* TestScene.m in Sources */,
 				19D6314319A382240068F1CC /* ViewController.m in Sources */,
 				19D6313D19A382240068F1CC /* AppDelegate.m in Sources */,

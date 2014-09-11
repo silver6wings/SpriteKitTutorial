@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TestScene.h"
+#import "CameraScene.h"
 
 @implementation ViewController
 
@@ -26,7 +27,7 @@
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
     skView.showsDrawCount = YES;
-    skView.showsPhysics = NO;
+    skView.showsPhysics = YES;
     
     if(!skView.scene){
         TestScene * testScene = [[TestScene alloc] initWithSize:skView.bounds.size];

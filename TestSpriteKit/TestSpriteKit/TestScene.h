@@ -2,6 +2,6 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface TestScene : SKScene
+@interface TestScene : SKScene <SKPhysicsContactDelegate>
 
 @end
