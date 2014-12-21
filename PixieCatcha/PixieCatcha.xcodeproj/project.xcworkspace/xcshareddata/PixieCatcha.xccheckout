@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E4DD1F6E-BF5F-4AC0-A482-4A84E1F79076</string>
+	<string>16D3FEDB-EE05-4E22-9B38-FE392F32EB27</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Sisyphus</string>
+	<string>PixieCatcha</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>900A84830B44C518D33917A1AC110C36EED147C9</key>
 		<string>https://github.com/silver6wings/SpriteKitTutorial.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Sisyphus/Sisyphus.xcodeproj</string>
+	<string>PixieCatcha/PixieCatcha.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>900A84830B44C518D33917A1AC110C36EED147C9</key>

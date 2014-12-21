@@ -10,29 +10,29 @@
 	<string>CrazySnake</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CA739419-1B2E-43EC-9E78-57F800EEB4C5</key>
+		<key>900A84830B44C518D33917A1AC110C36EED147C9</key>
 		<string>https://github.com/silver6wings/SpriteKitTutorial.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>7.1 LittleGame/CrazySnake.xcodeproj/project.xcworkspace</string>
+	<string>CrazySnake/CrazySnake.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CA739419-1B2E-43EC-9E78-57F800EEB4C5</key>
+		<key>900A84830B44C518D33917A1AC110C36EED147C9</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/silver6wings/SpriteKitTutorial.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CA739419-1B2E-43EC-9E78-57F800EEB4C5</string>
+	<string>900A84830B44C518D33917A1AC110C36EED147C9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CA739419-1B2E-43EC-9E78-57F800EEB4C5</string>
+			<string>900A84830B44C518D33917A1AC110C36EED147C9</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SpriteKitTutorial</string>
 		</dict>

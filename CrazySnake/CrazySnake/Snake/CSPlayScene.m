@@ -49,13 +49,6 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) float interval;
 @property (nonatomic, assign) int samplingCount;
 
-/*
-@property (nonatomic, assign) int snakeHeadX;
-@property (nonatomic, assign) int snakeHeadY;
-@property (nonatomic, assign) int snakeTailX;
-@property (nonatomic, assign) int snakeTailY;
-*/
-
 @property (nonatomic, assign) int snakeLength;
 @property (nonatomic) CSBody * snakeHead;
 @property (nonatomic) CSBody * snakeTail;
@@ -88,7 +81,7 @@ typedef enum : NSUInteger {
         _myLabel.text = @"stop";
         _myLabel.fontSize = 30;
         _myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
+                                        CGRectGetMidY(self.frame));
         [self addChild:_myLabel];
         
         // 初始化参数
