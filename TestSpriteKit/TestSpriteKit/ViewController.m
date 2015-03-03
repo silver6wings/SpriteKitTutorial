@@ -22,7 +22,6 @@
 {
     [super viewDidLoad];
 
-    // Configure the view.
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
@@ -54,7 +53,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
 }
 
 @end

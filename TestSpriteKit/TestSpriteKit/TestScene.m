@@ -11,36 +11,18 @@ SKSpriteNode * node1, * node2;
 SKEmitterNode * testEmitter;
 
 -(id)initWithSize:(CGSize)size{
-    if (self = [super initWithSize:size]) {
+    if (self = [super initWithSize:size])
+    {
+        self.backgroundColor = [UIColor blueColor];
+        SKTexture * all = [SKTexture textureWithImageNamed:@"test.png"];
+        SKTexture * texture = [SKTexture textureWithRect:CGRectMake(0, 0.75, 0.25, 0.25) inTexture:all];
         
-        self.physicsWorld.gravity = CGVectorMake(0, 0);
-        self.physicsWorld.contactDelegate = self;
-        self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
+        SKSpriteNode * node = [SKSpriteNode spriteNodeWithTexture:texture];
+        node.size = CGSizeMake(100, 100);
+        node.position = CGPointMake(100, 100);
+        [self addChild:node];
         
-        
-        node1 = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(50, 50)];
-        node1.position = CGPointMake(160, 100);
-        node1.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:20];
-        node1.physicsBody.categoryBitMask = testCategory1;
-        node1.physicsBody.collisionBitMask = testCategory2;
-        node1.physicsBody.contactTestBitMask = testCategory2;
-        [self addChild:node1];
-        
-        node2 = [SKSpriteNode spriteNodeWithColor:[SKColor blueColor] size:CGSizeMake(50, 50)];
-        node2.position = CGPointMake(160, 200);
-        node2.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(40, 40)];
-        node2.physicsBody.dynamic = YES;
-        node2.physicsBody.categoryBitMask = testCategory2;
-        node2.physicsBody.collisionBitMask = testCategory1;
-        node2.physicsBody.contactTestBitMask = testCategory1;
-        [self addChild:node2];
-        
-        SKPhysicsJoint * testJoint = [SKPhysicsJointLimit jointWithBodyA:node1.physicsBody
-                                                                   bodyB:node2.physicsBody
-                                                                 anchorA:CGPointMake(160, 100)
-                                                                 anchorB:CGPointMake(160, 200)];
-        
-        [self.physicsWorld addJoint:testJoint];
+        NSLog(@"12345");
     }
     return self;
 }
@@ -53,8 +35,6 @@ SKEmitterNode * testEmitter;
 //        [node2 removeFromParent];
     }
 }
-
-
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [node1.physicsBody applyForce:CGVectorMake(500, 1000)];
@@ -72,29 +52,39 @@ SKEmitterNode * testEmitter;
 -(void)didMoveToView:(SKView *)view{
     
     /* 测试NodeTree
+     */
+
+    
+    /* 测试PhysicsJoint
+     self.physicsWorld.gravity = CGVectorMake(0, 0);
+     self.physicsWorld.contactDelegate = self;
+     self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
      
-     SKSpriteNode * node1 = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(200, 200)];
-     node1.zPosition = 1.0;
+     
+     node1 = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(50, 50)];
+     node1.position = CGPointMake(160, 100);
+     node1.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:20];
+     node1.physicsBody.categoryBitMask = testCategory1;
+     node1.physicsBody.collisionBitMask = testCategory2;
+     node1.physicsBody.contactTestBitMask = testCategory2;
      [self addChild:node1];
      
-     SKSpriteNode * node11 = [SKSpriteNode spriteNodeWithColor:[SKColor orangeColor] size:CGSizeMake(100, 100)];
-     node11.position = CGPointMake(-50, -50);
-     node11.zPosition = 1.0f;
-     [node1 addChild:node11];
-     
-     SKSpriteNode * node12 = [SKSpriteNode spriteNodeWithColor:[SKColor yellowColor] size:CGSizeMake(100, 100)];
-     [node1 addChild:node12];
-     
-     SKSpriteNode * node2 = [SKSpriteNode spriteNodeWithColor:[SKColor greenColor] size:CGSizeMake(200, 200)];
-     node2.position = CGPointMake(100, 100);
+     node2 = [SKSpriteNode spriteNodeWithColor:[SKColor blueColor] size:CGSizeMake(50, 50)];
+     node2.position = CGPointMake(160, 200);
+     node2.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(40, 40)];
+     node2.physicsBody.dynamic = YES;
+     node2.physicsBody.categoryBitMask = testCategory2;
+     node2.physicsBody.collisionBitMask = testCategory1;
+     node2.physicsBody.contactTestBitMask = testCategory1;
      [self addChild:node2];
      
-     SKSpriteNode * node21 = [SKSpriteNode spriteNodeWithColor:[SKColor blueColor] size:CGSizeMake(100, 100)];
-     node21.position = CGPointMake(50, 50);
-     [node2 addChild:node21];
+     SKPhysicsJoint * testJoint = [SKPhysicsJointLimit jointWithBodyA:node1.physicsBody
+     bodyB:node2.physicsBody
+     anchorA:CGPointMake(160, 100)
+     anchorB:CGPointMake(160, 200)];
      
+     [self.physicsWorld addJoint:testJoint];
      */
-    
     
     
     /* textureAtlas样例代码

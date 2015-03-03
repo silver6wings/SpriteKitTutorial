@@ -17,6 +17,9 @@
 		194549DA19AC6C63006F3576 /* TestFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 194549D319AC6C63006F3576 /* TestFire.sks */; };
 		194549DB19AC6C63006F3576 /* TestSpark.sks in Resources */ = {isa = PBXBuildFile; fileRef = 194549D419AC6C63006F3576 /* TestSpark.sks */; };
 		19454A5B19AC785F006F3576 /* BearImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 19454A5A19AC785F006F3576 /* BearImages.atlas */; };
+		19611A861A93707C00E47560 /* emocheng.png in Resources */ = {isa = PBXBuildFile; fileRef = 19611A851A93707C00E47560 /* emocheng.png */; };
+		196E00991A93979E00CA49A7 /* role.png in Resources */ = {isa = PBXBuildFile; fileRef = 196E00981A93979E00CA49A7 /* role.png */; };
+		196E009B1A93A39A00CA49A7 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 196E009A1A93A39A00CA49A7 /* test.png */; };
 		19705A6519A3888900BA3032 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 19705A6419A3888900BA3032 /* TestScene.m */; };
 		19A0E3C219AD8E0E002DCC90 /* TextureNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19A0E3C119AD8E0E002DCC90 /* TextureNames.plist */; };
 		19A0E3C419ADC1E0002DCC90 /* Missile.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0E3C319ADC1E0002DCC90 /* Missile.png */; };
@@ -44,6 +47,9 @@
 		194549D319AC6C63006F3576 /* TestFire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = TestFire.sks; path = Resource/TestFire.sks; sourceTree = "<group>"; };
 		194549D419AC6C63006F3576 /* TestSpark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = TestSpark.sks; path = Resource/TestSpark.sks; sourceTree = "<group>"; };
 		19454A5A19AC785F006F3576 /* BearImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = BearImages.atlas; path = Resource/BearImages.atlas; sourceTree = "<group>"; };
+		19611A851A93707C00E47560 /* emocheng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emocheng.png; sourceTree = "<group>"; };
+		196E00981A93979E00CA49A7 /* role.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = role.png; sourceTree = "<group>"; };
+		196E009A1A93A39A00CA49A7 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		19705A6319A3888900BA3032 /* TestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
 		19705A6419A3888900BA3032 /* TestScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestScene.m; sourceTree = "<group>"; };
 		19A0E3C119AD8E0E002DCC90 /* TextureNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TextureNames.plist; sourceTree = "<group>"; };
@@ -144,6 +150,9 @@
 				19AD772D19B749F900CE7CA6 /* CameraScene.m */,
 				19705A6319A3888900BA3032 /* TestScene.h */,
 				19705A6419A3888900BA3032 /* TestScene.m */,
+				19611A851A93707C00E47560 /* emocheng.png */,
+				196E009A1A93A39A00CA49A7 /* test.png */,
+				196E00981A93979E00CA49A7 /* role.png */,
 				19D6314919A382240068F1CC /* Images.xcassets */,
 				19D6313319A382240068F1CC /* Supporting Files */,
 			);
@@ -213,15 +222,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196E00991A93979E00CA49A7 /* role.png in Resources */,
 				194549DB19AC6C63006F3576 /* TestSpark.sks in Resources */,
 				19D6313719A382240068F1CC /* InfoPlist.strings in Resources */,
 				194549DA19AC6C63006F3576 /* TestFire.sks in Resources */,
 				19358BBF19AC95FF0090727A /* FireFrames.atlas in Resources */,
 				194549D619AC6C63006F3576 /* spark.png in Resources */,
+				19611A861A93707C00E47560 /* emocheng.png in Resources */,
 				19454A5B19AC785F006F3576 /* BearImages.atlas in Resources */,
 				19A0E3C219AD8E0E002DCC90 /* TextureNames.plist in Resources */,
 				194549D519AC6C63006F3576 /* Spaceship.png in Resources */,
 				192817C119AEF0C4008947DF /* testSound.wav in Resources */,
+				196E009B1A93A39A00CA49A7 /* test.png in Resources */,
 				194549D919AC6C63006F3576 /* testVideo.mp4 in Resources */,
 				19A0E3C419ADC1E0002DCC90 /* Missile.png in Resources */,
 				19D6314A19A382240068F1CC /* Images.xcassets in Resources */,

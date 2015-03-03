@@ -20,7 +20,6 @@ SKSpriteNode * camera;
         
         SKSpriteNode * myWorld = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship.png"];
         myWorld.position = CGPointMake(0, 0);
-        myWorld.zPosition = 1.0;
         myWorld.name = @"myWorld";
         [self addChild:myWorld];
         
@@ -32,7 +31,7 @@ SKSpriteNode * camera;
         camera = [SKSpriteNode spriteNodeWithImageNamed:@"testButton"];
         camera.position = CGPointMake(100, 100);
         camera.name = @"camera";
-        [self addChild:camera];
+        [myWorld addChild:camera];
         
         NSLog(@"%f", myWorld.zPosition);
         NSLog(@"%f", s1.zPosition);
@@ -48,11 +47,11 @@ SKSpriteNode * camera;
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     
-    [camera runAction:[SKAction moveByX:100 y:0 duration:0.5]];
+    [camera runAction:[SKAction moveByX:10 y:20 duration:0.5]];
 }
 
 -(void)didSimulatePhysics{
-    //[self centerOnNode:camera];
+    [self centerOnNode:camera];
 }
 
 -(void)centerOnNode:(SKNode *)node{

@@ -29,6 +29,8 @@
 		1973EDC41A1B601200DBE68D /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1973EDC31A1B601200DBE68D /* GameViewController.m */; };
 		1973EDC91A1B601200DBE68D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1973EDC81A1B601200DBE68D /* Images.xcassets */; };
 		1973EDD81A1B601200DBE68D /* PixieCatchaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1973EDD71A1B601200DBE68D /* PixieCatchaTests.m */; };
+		19A56AB11A94B83600348A27 /* CVRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A56AB01A94B83600348A27 /* CVRole.m */; };
+		19A56AB31A94C0A100348A27 /* role1.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A56AB21A94C0A100348A27 /* role1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,9 @@
 		1973EDD11A1B601200DBE68D /* PixieCatchaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixieCatchaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1973EDD61A1B601200DBE68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1973EDD71A1B601200DBE68D /* PixieCatchaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixieCatchaTests.m; sourceTree = "<group>"; };
+		19A56AAF1A94B83600348A27 /* CVRole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVRole.h; sourceTree = "<group>"; };
+		19A56AB01A94B83600348A27 /* CVRole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVRole.m; sourceTree = "<group>"; };
+		19A56AB21A94C0A100348A27 /* role1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = role1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +151,9 @@
 				1973EDBE1A1B601100DBE68D /* GameScene.m */,
 				1973EDC81A1B601200DBE68D /* Images.xcassets */,
 				1973EDB61A1B601100DBE68D /* Supporting Files */,
+				19A56AAF1A94B83600348A27 /* CVRole.h */,
+				19A56AB01A94B83600348A27 /* CVRole.m */,
+				19A56AB21A94C0A100348A27 /* role1.png */,
 			);
 			path = PixieCatcha;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 				1948DA8B1A470542007E478D /* bee2.png in Resources */,
 				1948DA891A470542007E478D /* bee0.png in Resources */,
 				1948DA911A470542007E478D /* rope4.png in Resources */,
+				19A56AB31A94C0A100348A27 /* role1.png in Resources */,
 				1948DA8A1A470542007E478D /* bee1.png in Resources */,
 				1948DA941A470542007E478D /* rope7.png in Resources */,
 			);
@@ -289,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A56AB11A94B83600348A27 /* CVRole.m in Sources */,
 				1973EDC41A1B601200DBE68D /* GameViewController.m in Sources */,
 				1973EDBC1A1B601100DBE68D /* AppDelegate.m in Sources */,
 				1973EDBF1A1B601100DBE68D /* GameScene.m in Sources */,
